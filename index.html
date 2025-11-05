@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="ai-usage" content="This website was created with the assistance of AI tools." />
+  <title>QuickShelf — Inventory Made Effortless</title>
+  <meta name="description" content="QuickShelf streamlines inventory for small teams: real‑time counts, low‑stock alerts, simple reporting." />
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <style>
+    body{background:#ffffff;color:#f6f3f3;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    nav.topnav{position:sticky;top:0;z-index:50;background:rgba(11,11,14,.7);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid rgba(255,255,255,.08);padding:.75rem 1rem;display:flex;gap:1rem;justify-content:center}
+    nav.topnav a{color:#f5f7fb;text-decoration:none;padding:.5rem .75rem;border-radius:10px;border:1px solid transparent}
+    nav.topnav a.active{border-color:rgba(255,255,255,.16)}
+    header{padding:2rem 1rem;text-align:center}
+    .logo{width:84px;height:auto;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.35)}
+    .tagline{letter-spacing:.18em;opacity:.9;margin-top:.35rem}
+    .container{max-width:1100px;margin:0 auto;padding:0 1rem}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;margin:2rem 0}
+    .hero h1{font-size:clamp(32px,5vw,56px);line-height:1.05;margin:.2em 0 .1em}
+    .sub{color:#02060e;font-size:1.1rem}
+    .btns{display:flex;gap:12px;margin-top:16px}
+    .btn{display:inline-block;padding:.85rem 1.1rem;border-radius:14px;font-weight:700;border:1px solid rgba(90, 155, 99, 0.16);text-decoration:none}
+    .btn.primary{background:#1bb5aa;color:#faf6f6;border:0}
+    .btn.ghost{background:#1bb5aa;color:#f5f7fb}
+    .card{background:linear-gradient(180deg,rgba(191, 46, 46, 0.06),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:20px;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+    .dash{aspect-ratio:16/10;display:grid;place-items:center}
+    section{padding:2.5rem 0}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .features .card{padding:18px}
+    .features h3{margin:.4em 0 .2em}
+    .features p{color:#1bb5aa}
+    .cta{background:rgba(255,255,255,.03);border-top:1px solid rgba(185, 67, 67, 0.08);text-align:center;padding:2rem 1rem}
+    footer{text-align:center;border-top:1px solid rgba(121, 21, 21, 0.08);padding:1.25rem 1rem;margin-top:2rem}
+    nav.topnav{position:sticky;top:0;z-index:50;background:rgba(11,11,14,.7);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
+  </style>
+</head>
+<body>
+  <nav class="topnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="team.html">Team</a>
+    <a href="products.html">Products</a>
+    <a href="contact-us.html">Contact</a>
+  </nav>
+
+  <header>
+    <img src="images/logo.jpeg" alt="QuickShelf Logo" class="logo" />
+    <h1>QuickShelf</h1>
+    <p class="tagline">INVENTORY MADE EFFORTLESS</p>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="top">
+      <div>
+        <h1>Track stock in minutes, not months.</h1>
+        <p class="sub">QuickShelf gives small shops a clean dashboard, barcode lookups, and real‑time counts. So you always know what you have, what’s low, and what to reorder next.</p>
+        <div class="btns">
+          <a class="btn primary" href="contact-us.html">Request a demo</a>
+          <a class="btn ghost" href="#features">See features</a>
+        </div>
+        <p class="sub" style="margin-top:10px">⚡ One‑hour onboarding • No credit card</p>
+      </div>
+      <div class="card dash" aria-hidden="true">
+        <img alt="Dashboard preview" src="images/dashboard-preview.png" style="width:100%;height:auto;border-radius:18px;border:1px solid rgba(255,255,255,.06)" />
+      </div>
+    </section>
+
+    <section id="features">
+      <h2>Why teams choose QuickShelf</h2>
+      <div class="features">
+        <article class="card">
+          <h3>Instant barcode lookups</h3>
+          <p>Scan a barcode or type a SKU to pull live counts, locations, and reorder points.</p>
+        </article>
+        <article class="card">
+          <h3>Low‑stock alerts</h3>
+          <p>Get proactive notifications before you run out, right in your inbox.</p>
+        </article>
+        <article class="card">
+          <h3>Simple insights</h3>
+          <p>Spot fast‑movers and dead stock, export to CSV or Google Sheets anytime.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>See pricing & product options</h2>
+      <p class="sub">We keep it simple for solo owners and growing teams.</p>
+      <div class="btns">
+        <a class="btn primary" href="products.html">Explore products</a>
+        <a class="btn ghost" href="about.html">Learn about QuickShelf</a>
+      </div>
+    </section>
+  </main>
+
+  <section class="cta" aria-label="Call to action">
+    <h2>Ready to make inventory effortless?</h2>
+    <p><a class="btn primary" href="contact-us.html">Contact us</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 QuickShelf. All rights reserved.</p>
+  </footer>
+</body>
+</html>

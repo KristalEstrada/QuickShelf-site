@@ -1,0 +1,62 @@
+/* Main styles for QuickShelf */
+
+/* Logo sizing: adjust width to taste. Using max-width keeps image responsive. */
+.logo {
+  width: 500px; /* change this value to make the logo larger or smaller */
+  height: auto;
+  display: block; /* prevents baseline whitespace and helps centering */
+  margin: 0 auto; /* center inside header */
+}
+
+/* Basic page styles (kept minimal) */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1bb5aa;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.topnav {
+  background: #1bb5aa;
+  padding: 10px;
+  text-align: center;
+}
+
+.topnav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fffdfde0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #1bb5aa;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Ensure header text is readable on brand background */
+header h1, header p {
+  color: #1bb5aa;
+}
+
+/* Card / main content backgrounds for readability */
+main, .w3-card, form {
+  background: #fff;
+  color: #222;
+  padding: 16px;
+  border-radius: 6px;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #efeded;
+  color: #1bb5aa;
+}
